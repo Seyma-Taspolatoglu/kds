@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galatasaray | Transfer Merkezi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/takim-detay.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <h2>TRANSFER MERKEZİ</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/"><i class="fas fa-home"></i>Ana Sayfa</a></li>
+                    <li><a href="takimlar.html"><i class="fas fa-users"></i>Takımlar</a></li>
+                    <li><a href="transfer-onerisi.html"><i class="fas fa-lightbulb"></i>Transfer Önerisi</a></li>
+                    <li><a href="genel-istatistikler.html"><i class="fas fa-chart-bar"></i>Genel İstatistikler</a></li>
+                    <li><a href="super-lig-siralamasi.html"><i class="fas fa-trophy"></i>Süper Lig Sıralaması</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main-content">
+            <div class="team-detail-header">
+                <div class="team-banner" style="background: linear-gradient(135deg, #FFB94E 0%, #E30A17 100%)">
+                    <div class="team-info">
+                        <img src="images/logos/galatasaray.png" alt="Galatasaray" class="team-logo">
+                        <div class="team-basic-info">
+                            <h1>Galatasaray</h1>
+                            <div class="team-meta">
+                                <span><i class="fas fa-calendar"></i> Kuruluş: 1905</span>
+                                <span><i class="fas fa-map-marker-alt"></i> NEF Stadyumu</span>
+                                <span><i class="fas fa-trophy"></i> 23 Şampiyonluk</span>
+                            </div>
+                        </div>
+                        <div class="team-stats">
+                            <div class="stat-box">
+                                <span class="stat-value">28</span>
+                                <span class="stat-label">Kadro</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-value">16</span>
+                                <span class="stat-label">Yabancı</span>
+                            </div>
+                            <div class="stat-box highlight">
+                                <span class="stat-value">260.85M €</span>
+                                <span class="stat-label">Değer</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-value">26.8</span>
+                                <span class="stat-label">Yaş Ort.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-tabs">
+                <button class="tab-btn active" data-tab="squad">
+                    <i class="fas fa-users"></i>
+                    Takım Kadrosu
+                </button>
+                <a href="takim-istatistik.html" class="tab-btn">
+                    <i class="fas fa-chart-bar"></i>
+                    İstatistikler
+                </a>
+                <a href="takim-transfer.html" class="tab-btn">
+                    <i class="fas fa-exchange-alt"></i>
+                    Transferler
+                </a>
+                <a href="takim-karsilastirma.html" class="tab-btn">
+                    <i class="fas fa-balance-scale"></i>
+                    Karşılaştırma
+                </a>
+            </div>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="squad">
+                    <div class="squad-filters">
+                        <button class="filter-btn active">Tümü</button>
+                        <button class="filter-btn">Kaleciler</button>
+                        <button class="filter-btn">Defans</button>
+                        <button class="filter-btn">Orta Saha</button>
+                        <button class="filter-btn">Forvet</button>
+                    </div>
+                    <div class="players-grid" id="playersContainer">
+                        <div class="player-card">
+                            <img src="images/players/icardi.jpg" alt="Mauro Icardi" class="player-photo">
+                            <div class="player-info">
+                                <h3>Mauro Icardi</h3>
+                                <p>Forvet</p>
+                            </div>
+                        </div>
+
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="images/players/zaha.jpg" alt="Wilfried Zaha">
+                            </div>
+                            <div class="player-info">
+                                <h3>Wilfried Zaha</h3>
+                                <span class="position">Kanat</span>
+                            </div>
+                        </div>
+
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="images/players/davinson-sanchez.jpg" alt="Davinson Sanchez">
+                            </div>
+                            <div class="player-info">
+                                <h3>Davinson Sanchez</h3>
+                                <span class="position">Defans</span>
+                            </div>
+                        </div>
+
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="images/players/gunay-guvenc.jpg" alt="Günay Güvenç">
+                            </div>
+                            <div class="player-info">
+                                <h3>Günay Güvenç</h3>
+                                <span class="position">Kaleci</span>
+                            </div>
+                        </div>
+
+                        <!-- Diğer oyuncular için benzer kartlar -->
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="transfers">
+                    <div class="transfers-container">
+                        <!-- Transferler JavaScript ile eklenecek -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/takim-detay.js"></script>
+</body>
+</html> 

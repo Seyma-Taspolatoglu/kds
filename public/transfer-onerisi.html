@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Önerisi | Transfer Merkezi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/transfer-onerisi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <h2>TRANSFER MERKEZİ</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/"><i class="fas fa-home"></i>Ana Sayfa</a></li>
+                    <li><a href="takimlar.html"><i class="fas fa-users"></i>Takımlar</a></li>
+                    <li><a href="transfer-onerisi.html" class="active"><i class="fas fa-lightbulb"></i>Transfer Önerisi</a></li>
+                    <li><a href="genel-istatistikler.html"><i class="fas fa-chart-bar"></i>Genel İstatistikler</a></li>
+                    <li><a href="super-lig-siralamasi.html"><i class="fas fa-trophy"></i>Süper Lig Sıralaması</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main-content">
+            <div class="suggestion-header">
+                <h1>Transfer Önerisi</h1>
+                <p>Takımınız için en uygun transferleri bulun</p>
+            </div>
+
+            <div class="suggestion-form">
+                <!-- Takım Seçimi -->
+                <div class="form-group">
+                    <label>Takım Seçin</label>
+                    <div class="team-buttons">
+                        <button class="team-btn" data-team="galatasaray">
+                            <img src="images/logos/galatasaray.png" alt="Galatasaray">
+                            <span>Galatasaray</span>
+                        </button>
+                        <button class="team-btn" data-team="fenerbahce">
+                            <img src="images/logos/fenerbahce.png" alt="Fenerbahçe">
+                            <span>Fenerbahçe</span>
+                        </button>
+                        <button class="team-btn" data-team="besiktas">
+                            <img src="images/logos/besiktas.png" alt="Beşiktaş">
+                            <span>Beşiktaş</span>
+                        </button>
+                        <button class="team-btn" data-team="trabzonspor">
+                            <img src="images/logos/trabzonspor.png" alt="Trabzonspor">
+                            <span>Trabzonspor</span>
+                        </button>
+                        <button class="team-btn" data-team="basaksehir">
+                            <img src="images/logos/basaksehir.png" alt="Başakşehir">
+                            <span>Başakşehir</span>
+                        </button>
+                        <button class="team-btn" data-team="adanademirspor">
+                            <img src="images/logos/adanademirspor.png" alt="Adana Demirspor">
+                            <span>A. Demirspor</span>
+                        </button>
+                        <button class="team-btn" data-team="antalyaspor">
+                            <img src="images/logos/antalyaspor.png" alt="Antalyaspor">
+                            <span>Antalyaspor</span>
+                        </button>
+                        <button class="team-btn" data-team="alanyaspor">
+                            <img src="images/logos/alanyaspor.png" alt="Alanyaspor">
+                            <span>Alanyaspor</span>
+                        </button>
+                        <button class="team-btn" data-team="kayserispor">
+                            <img src="images/logos/kayserispor.png" alt="Kayserispor">
+                            <span>Kayserispor</span>
+                        </button>
+                        <button class="team-btn" data-team="konyaspor">
+                            <img src="images/logos/konyaspor.png" alt="Konyaspor">
+                            <span>Konyaspor</span>
+                        </button>
+                        <button class="team-btn" data-team="gaziantepfk">
+                            <img src="images/logos/gaziantepfk.png" alt="Gaziantep FK">
+                            <span>Gaziantep FK</span>
+                        </button>
+                        <button class="team-btn" data-team="kasimpasa">
+                            <img src="images/logos/kasimpasa.png" alt="Kasımpaşa">
+                            <span>Kasımpaşa</span>
+                        </button>
+                        <button class="team-btn" data-team="rizespor">
+                            <img src="images/logos/rizespor.png" alt="Çaykur Rizespor">
+                            <span>Rizespor</span>
+                        </button>
+                        <button class="team-btn" data-team="samsunspor">
+                            <img src="images/logos/samsunspor.png" alt="Samsunspor">
+                            <span>Samsunspor</span>
+                        </button>
+                        <button class="team-btn" data-team="pendikspor">
+                            <img src="images/logos/pendikspor.png" alt="Pendikspor">
+                            <span>Pendikspor</span>
+                        </button>
+                        <button class="team-btn" data-team="istanbulspor">
+                            <img src="images/logos/istanbulspor.png" alt="İstanbulspor">
+                            <span>İstanbulspor</span>
+                        </button>
+                        <button class="team-btn" data-team="hatayspor">
+                            <img src="images/logos/hatayspor.png" alt="Hatayspor">
+                            <span>Hatayspor</span>
+                        </button>
+                        <button class="team-btn" data-team="ankaragucu">
+                            <img src="images/logos/ankaragucu.png" alt="Ankaragücü">
+                            <span>Ankaragücü</span>
+                        </button>
+                        <button class="team-btn" data-team="karagumruk">
+                            <img src="images/logos/karagumruk.png" alt="Fatih Karagümrük">
+                            <span>Karagümrük</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Pozisyon Seçimi -->
+                <div class="form-group">
+                    <label>Pozisyon</label>
+                    <select id="positionSelect">
+                        <option value="">Pozisyon Seçin</option>
+                        <option value="kaleci">Kaleci</option>
+                        <option value="defans">Defans</option>
+                        <option value="ortasaha">Orta Saha</option>
+                        <option value="forvet">Forvet</option>
+                    </select>
+                </div>
+
+                <!-- Bütçe Aralığı -->
+                <div class="form-group">
+                    <label>Bütçe Aralığı</label>
+                    <div class="budget-range">
+                        <input type="number" id="minBudget" placeholder="Min €">
+                        <span>-</span>
+                        <input type="number" id="maxBudget" placeholder="Max €">
+                    </div>
+                </div>
+
+                <button id="findPlayers" class="submit-btn">
+                    <i class="fas fa-search"></i>
+                    Oyuncuları Bul
+                </button>
+            </div>
+
+            <div class="suggestions-container" id="suggestionsContainer">
+                <!-- Öneriler buraya dinamik olarak eklenecek -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/transfer-onerisi.js"></script>
+</body>
+</html> 

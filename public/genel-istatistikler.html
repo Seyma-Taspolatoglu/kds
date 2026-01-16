@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genel İstatistikler | Transfer Merkezi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/genel-istatistikler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <h2>TRANSFER MERKEZİ</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/"><i class="fas fa-home"></i>Ana Sayfa</a></li>
+                    <li><a href="takimlar.html"><i class="fas fa-users"></i>Takımlar</a></li>
+                    <li><a href="transfer-onerisi.html"><i class="fas fa-lightbulb"></i>Transfer Önerisi</a></li>
+                    <li><a href="genel-istatistikler.html" class="active"><i class="fas fa-chart-bar"></i>Genel İstatistikler</a></li>
+                    <li><a href="super-lig-siralamasi.html"><i class="fas fa-trophy"></i>Süper Lig Sıralaması</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main-content">
+            <div class="stats-header">
+                <h1>Süper Lig Genel İstatistikleri</h1>
+                <div class="season">2023-2024 Sezonu</div>
+            </div>
+
+            <div class="stats-tabs">
+                <button class="tab-btn active" data-tab="goals">Gol İstatistikleri</button>
+                <button class="tab-btn" data-tab="players">Oyuncu İstatistikleri</button>
+                <button class="tab-btn" data-tab="matches">Maç İstatistikleri</button>
+            </div>
+
+            <div class="stats-content">
+                <!-- Gol İstatistikleri -->
+                <div class="tab-pane active" id="goals">
+                    <div class="stats-grid">
+                        <div class="stats-card">
+                            <h3>En Çok/Az Gol İstatistikleri</h3>
+                            <div class="chart-container">
+                                <canvas id="goalsChart"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="stats-card">
+                            <h3>Gol Dakika Dağılımı</h3>
+                            <div class="chart-container">
+                                <canvas id="goalTimingHeatmap"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Oyuncu İstatistikleri -->
+                <div class="tab-pane" id="players">
+                    <div class="stats-grid">
+                        <div class="stats-card">
+                            <h3>Gol Krallığı ve Asist Sıralaması</h3>
+                            <div class="chart-container">
+                                <canvas id="scorersChart"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="stats-card">
+                            <h3>Kart İstatistikleri</h3>
+                            <div class="chart-container">
+                                <canvas id="cardsRadarChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maç İstatistikleri -->
+                <div class="tab-pane" id="matches">
+                    <div class="stats-grid">
+                        <div class="stats-card">
+                            <h3>Top Hakimiyeti ve Pas İstatistikleri</h3>
+                            <div class="chart-container">
+                                <canvas id="possessionChart"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="stats-card">
+                            <h3>Şut ve İsabet Profili</h3>
+                            <div class="chart-container">
+                                <canvas id="shotsChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/genel-istatistikler.js"></script>
+</body>
+</html> 

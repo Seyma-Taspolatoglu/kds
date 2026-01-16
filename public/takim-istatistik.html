@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galatasaray İstatistikleri | Transfer Raporu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/takim-istatistik.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <h2>TRANSFER RAPORU</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i>Ana Sayfa</a></li>
+                    <li><a href="takimlar.html"><i class="fas fa-users"></i>Takımlar</a></li>
+                    <li><a href="istatistikler.html"><i class="fas fa-chart-bar"></i>Genel İstatistikler</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main-content">
+            <div class="stats-header">
+                <div class="team-info">
+                    <img src="images/logos/galatasaray.png" alt="Galatasaray" class="team-logo">
+                    <h1>Galatasaray İstatistikleri</h1>
+                </div>
+                <div class="season-selector">
+                    <span>2023-2024 Sezonu</span>
+                </div>
+            </div>
+
+            <div class="team-tabs">
+                <a href="takim-detay.html" class="tab-btn">
+                    <i class="fas fa-users"></i>
+                    Takım Kadrosu
+                </a>
+                <a href="takim-istatistik.html" class="tab-btn active">
+                    <i class="fas fa-chart-bar"></i>
+                    İstatistikler
+                </a>
+                <a href="takim-transfer.html" class="tab-btn">
+                    <i class="fas fa-exchange-alt"></i>
+                    Transferler
+                </a>
+                <a href="takim-karsilastirma.html" class="tab-btn">
+                    <i class="fas fa-balance-scale"></i>
+                    Karşılaştırma
+                </a>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stats-card">
+                    <h3>Aylık Maç Sonuçları</h3>
+                    <canvas id="monthlyResults"></canvas>
+                </div>
+
+                <div class="stats-card">
+                    <h3>Gol ve Asist Krallığı</h3>
+                    <canvas id="scorersChart"></canvas>
+                </div>
+
+                <div class="stats-card">
+                    <h3>Gol Trendi</h3>
+                    <canvas id="goalTrend"></canvas>
+                </div>
+
+                <div class="stats-card">
+                    <h3>Genel Takım İstatistikleri</h3>
+                    <div class="chart-container">
+                        <canvas id="generalStats"></canvas>
+                    </div>
+                </div>
+
+                <div class="stats-card">
+                    <h3>Pozisyon Bazlı Maaş Dağılımı</h3>
+                    <div class="chart-container">
+                        <canvas id="salaryChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="stats-card">
+                    <h3>Maaş Projeksiyonu ve Limit Analizi</h3>
+                    <div class="chart-container">
+                        <canvas id="skillsChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/takim-istatistik.js"></script>
+</body>
+</html> 

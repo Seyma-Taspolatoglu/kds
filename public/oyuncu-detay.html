@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernando Muslera | Transfer Merkezi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/oyuncu-detay.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <h2>TRANSFER RAPORU</h2>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Oyuncu veya takım ara...">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i>Ana Sayfa</a></li>
+                    <li><a href="takimlar.html"><i class="fas fa-users"></i>Takımlar</a></li>
+                    <li><a href="istatistikler.html"><i class="fas fa-chart-bar"></i>Genel İstatistikler</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main-content">
+            <div class="player-profile">
+                <div class="player-header">
+                    <div class="player-info">
+                        <div class="player-image-wrapper">
+                            <img src="images/players/muslera.jpg" alt="Fernando Muslera" class="player-image">
+                            <span class="player-number">#1</span>
+                        </div>
+                        <div class="player-basic-info">
+                            <h1>Fernando Muslera</h1>
+                            <div class="player-meta">
+                                <span><i class="fas fa-flag"></i> Uruguay</span>
+                                <span><i class="fas fa-ruler-vertical"></i> 190 cm</span>
+                                <span><i class="fas fa-calendar"></i> 37 yaş</span>
+                                <span><i class="fas fa-euro-sign"></i> 2.5M €</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Gol Yemediği Maç</span>
+                        </div>
+                        <div class="stat-value">12</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <i class="fas fa-hand-paper"></i>
+                            <span>Kurtarış</span>
+                        </div>
+                        <div class="stat-value">84</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <i class="fas fa-futbol"></i>
+                            <span>Yediği Gol</span>
+                        </div>
+                        <div class="stat-value">24</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <i class="fas fa-star"></i>
+                            <span>Ortalama Puan</span>
+                        </div>
+                        <div class="stat-value">7.42</div>
+                    </div>
+                </div>
+
+                <div class="content-grid">
+                    <div class="info-section">
+                        <div class="info-card">
+                            <h2>Oyuncu Bilgileri</h2>
+                            <table class="info-table">
+                                <tr>
+                                    <td>Tam Ad</td>
+                                    <td>Néstor Fernando Muslera Micol</td>
+                                </tr>
+                                <tr>
+                                    <td>Doğum Tarihi</td>
+                                    <td>16 Haziran 1986</td>
+                                </tr>
+                                <tr>
+                                    <td>Boy</td>
+                                    <td>190 cm</td>
+                                </tr>
+                                <tr>
+                                    <td>Kullandığı Ayak</td>
+                                    <td>Sağ</td>
+                                </tr>
+                                <tr>
+                                    <td>Katılma Tarihi</td>
+                                    <td>1 Temmuz 2011</td>
+                                </tr>
+                                <tr>
+                                    <td>Sözleşme Bitiş</td>
+                                    <td>30 Haziran 2024</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                        <div class="chart-card">
+                            <h2>Sezon Performansı</h2>
+                            <canvas id="performanceChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="charts-section">
+                        <div class="chart-card radar-chart">
+                            <h2>Maç Başına İstatistikler</h2>
+                            <div class="chart-container">
+                                <canvas id="radarChart"></canvas>
+                            </div>
+                        </div>
+                        
+                        <div class="chart-card">
+                            <h2>Piyasa Değeri Değişimi</h2>
+                            <canvas id="valueChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/oyuncu-detay.js"></script>
+</body>
+</html> 

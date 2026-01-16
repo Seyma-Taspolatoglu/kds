@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSFER MERKEZİ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <h2>TRANSFER MERKEZİ</h2>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Oyuncu ara...">
+                <i class="fas fa-search"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/" class="active"><i class="fas fa-home"></i>Ana Sayfa</a></li>
+                    <li><a href="takimlar.html"><i class="fas fa-users"></i>Takımlar</a></li>
+                    <li><a href="transfer-onerisi.html"><i class="fas fa-lightbulb"></i>Transfer Önerisi</a></li>
+                    <li><a href="genel-istatistikler.html"><i class="fas fa-chart-bar"></i>Genel İstatistikler</a></li>
+                    <li><a href="super-lig-siralamasi.html"><i class="fas fa-trophy"></i>Süper Lig Sıralaması</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main-content">
+            <!-- İstatistik Kartları -->
+            <div class="stats-overview">
+                <div class="stat-card">
+                    <i class="fas fa-euro-sign"></i>
+                    <div class="stat-value">€897.5M</div>
+                    <div class="stat-label">Toplam Transfer Harcaması</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <div class="stat-value">482</div>
+                    <div class="stat-label">Aktif Transfer</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-globe"></i>
+                    <div class="stat-value">47</div>
+                    <div class="stat-label">Farklı Ülke</div>
+                </div>
+            </div>
+
+            <div class="content-grid">
+                <!-- Gündem Bölümü -->
+                <div class="news-section">
+                    <div class="section-header">
+                        <h2>
+                            <i class="fas fa-newspaper"></i>
+                            Gündem
+                        </h2>
+                        <div class="news-filters">
+                            <button class="filter-btn active" data-type="all">Tümü</button>
+                            <button class="filter-btn" data-type="resmi">Resmi</button>
+                            <button class="filter-btn" data-type="soylenti">Söylenti</button>
+                        </div>
+                    </div>
+                    <div class="news-list" id="newsList">
+                        <!-- Haberler JavaScript ile eklenecek -->
+                    </div>
+                </div>
+
+                <!-- En Yüksek Piyasa Değerleri -->
+                <div class="market-values">
+                    <div class="section-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h2>En Yüksek Piyasa Değerleri</h2>
+                    </div>
+                    <div class="value-list">
+                        <div class="value-card">
+                            <img src="images/players/icardi.jpg" alt="Mauro Icardi">
+                            <div class="value-info">
+                                <h4>Mauro Icardi</h4>
+                                <span class="team-name">
+                                    <i class="fas fa-shield-alt"></i>
+                                    Galatasaray
+                                </span>
+                            </div>
+                            <div class="value-badge">€45M</div>
+                        </div>
+                        <div class="value-card">
+                            <img src="images/players/tadic.jpg" alt="Dusan Tadic">
+                            <div class="value-info">
+                                <h4>Dusan Tadic</h4>
+                                <span class="team-name">
+                                    <i class="fas fa-shield-alt"></i>
+                                    Fenerbahçe
+                                </span>
+                            </div>
+                            <div class="value-badge">€25M</div>
+                        </div>
+                        <div class="value-card">
+                            <img src="images/players/zaha.jpg" alt="Wilfried Zaha">
+                            <div class="value-info">
+                                <h4>Wilfried Zaha</h4>
+                                <span class="team-name">
+                                    <i class="fas fa-shield-alt"></i>
+                                    Galatasaray
+                                </span>
+                            </div>
+                            <div class="value-badge">€22M</div>
+                        </div>
+                        <div class="value-card">
+                            <img src="images/players/mertens.jpg" alt="Dries Mertens">
+                            <div class="value-info">
+                                <h4>Dries Mertens</h4>
+                                <span class="team-name">
+                                    <i class="fas fa-shield-alt"></i>
+                                    Galatasaray
+                                </span>
+                            </div>
+                            <div class="value-badge">€20M</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- En Değerli Transferler -->
+                <div class="transfers-section">
+                    <div class="table-header">
+                        <i class="fas fa-star"></i>
+                        <h2>En Değerli Transferler</h2>
+                    </div>
+                    <table class="transfers-table">
+                        <thead>
+                            <tr>
+                                <th class="player-col">OYUNCU</th>
+                                <th class="age-col">YAŞ</th>
+                                <th class="team-col">ÖNCEKİ TAKIM</th>
+                                <th class="team-col">YENİ TAKIM</th>
+                                <th class="fee-col">BONSERVİS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="player-col">Mauro Icardi</td>
+                                <td class="age-col">30</td>
+                                <td class="team-col">Paris Saint-Germain</td>
+                                <td class="team-col">Galatasaray</td>
+                                <td class="fee-col">€25M</td>
+                            </tr>
+                            <tr>
+                                <td class="player-col">Timo Werner</td>
+                                <td class="age-col">27</td>
+                                <td class="team-col">RB Leipzig</td>
+                                <td class="team-col">Fenerbahçe</td>
+                                <td class="fee-col">€22M</td>
+                            </tr>
+                            <tr>
+                                <td class="player-col">Dries Mertens</td>
+                                <td class="age-col">36</td>
+                                <td class="team-col">Napoli</td>
+                                <td class="team-col">Galatasaray</td>
+                                <td class="fee-col">€18M</td>
+                            </tr>
+                            <tr>
+                                <td class="player-col">Sergio Ramos</td>
+                                <td class="age-col">37</td>
+                                <td class="team-col">Paris Saint-Germain</td>
+                                <td class="team-col">Galatasaray</td>
+                                <td class="fee-col">€15M</td>
+                            </tr>
+                            <tr>
+                                <td class="player-col">Enzo Fernández</td>
+                                <td class="age-col">22</td>
+                                <td class="team-col">Benfica</td>
+                                <td class="team-col">Galatasaray</td>
+                                <td class="fee-col">€12M</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

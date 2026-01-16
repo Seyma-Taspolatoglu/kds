@@ -1,0 +1,187 @@
+/* Takım İstatistik Sayfası Stilleri */
+.stats-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.team-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.team-info .team-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.team-info h1 {
+    font-size: 24px;
+    color: var(--text-dark);
+}
+
+.season-selector {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+/* İstatistik Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.stats-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: 400px;
+}
+
+.stats-card h3 {
+    font-size: 18px;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Detaylı İstatistikler */
+.detailed-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.stat-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.stat-name {
+    flex: 1;
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+.stat-bar {
+    flex: 2;
+    height: 8px;
+    background: var(--background-color);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bar-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 4px;
+    transition: width 1s ease;
+}
+
+.stat-value {
+    min-width: 45px;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+/* Responsive Tasarım */
+@media (max-width: 1200px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .stats-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .team-info {
+        flex-direction: column;
+    }
+}
+
+/* Pasta Grafik Kartı */
+.stats-card .chart-container {
+    position: relative;
+    height: calc(100% - 60px); /* Başlık yüksekliğini çıkar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats-card canvas {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Sekmeler */
+.team-tabs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.tab-btn {
+    padding: 12px 24px;
+    border: none;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.tab-btn i {
+    font-size: 16px;
+}
+
+.tab-btn:hover {
+    background: rgba(17, 50, 100, 0.1);
+    transform: translateY(-2px);
+}
+
+.tab-btn.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .team-tabs {
+        flex-wrap: wrap;
+    }
+    
+    .tab-btn {
+        flex: 1;
+        justify-content: center;
+        min-width: 150px;
+    }
+} 

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İstatistikler - Transfer Merkezi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <h2>TRANSFER MERKEZİ</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/"><i class="fas fa-home"></i>Ana Sayfa</a></li>
+                    <li><a href="/teams.html"><i class="fas fa-users"></i>Takımlar</a></li>
+                    <li><a href="/statistics.html" class="active"><i class="fas fa-chart-bar"></i>İstatistikler</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main-content">
+            <div class="stats-grid">
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3>Transfer Harcamaları Trendi</h3>
+                    </div>
+                    <canvas id="transferChart"></canvas>
+                </div>
+                
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3>Takım Değerleri</h3>
+                    </div>
+                    <canvas id="teamValuesChart"></canvas>
+                </div>
+
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3>Yaş Dağılımı</h3>
+                    </div>
+                    <canvas id="ageDistributionChart"></canvas>
+                </div>
+
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3>Pozisyonlara Göre Dağılım</h3>
+                    </div>
+                    <canvas id="positionChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/statistics.js"></script>
+</body>
+</html> 

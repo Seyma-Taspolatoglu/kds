@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oyuncu Karşılaştırma | Transfer Raporu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/takim-karsilastirma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <h2>TRANSFER RAPORU</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i>Ana Sayfa</a></li>
+                    <li><a href="takimlar.html"><i class="fas fa-users"></i>Takımlar</a></li>
+                    <li><a href="istatistikler.html"><i class="fas fa-chart-bar"></i>Genel İstatistikler</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main-content">
+            <div class="comparison-header">
+                <div class="team-info">
+                    <img src="images/logos/galatasaray.png" alt="Galatasaray" class="team-logo">
+                    <h1>Galatasaray İstatistikleri</h1>
+                </div>
+                <div class="season-selector">
+                    <span>2023-2024 Sezonu</span>
+                </div>
+            </div>
+
+            <div class="team-tabs">
+                <a href="takim-detay.html" class="tab-btn">
+                    <i class="fas fa-users"></i>
+                    <span>Takım Kadrosu</span>
+                </a>
+                <a href="takim-istatistik.html" class="tab-btn">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>İstatistikler</span>
+                </a>
+                <a href="takim-transfer.html" class="tab-btn">
+                    <i class="fas fa-exchange-alt"></i>
+                    <span>Transferler</span>
+                </a>
+                <a href="takim-karsilastirma.html" class="tab-btn active">
+                    <i class="fas fa-balance-scale"></i>
+                    <span>Karşılaştırma</span>
+                </a>
+            </div>
+
+            <div class="comparison-container">
+                <div class="player-selector">
+                    <div class="player-select">
+                        <label>1. Oyuncu</label>
+                        <input type="text" list="players1" id="player1" placeholder="Oyuncu ara veya seç...">
+                        <datalist id="players1">
+                            <option value="Mauro Icardi (Forvet)">
+                            <option value="Wilfried Zaha (Kanat)">
+                            <option value="Dries Mertens (Forvet)">
+                        </datalist>
+                    </div>
+                    <div class="vs-badge">VS</div>
+                    <div class="player-select">
+                        <label>2. Oyuncu</label>
+                        <input type="text" list="players2" id="player2" placeholder="Oyuncu ara veya seç...">
+                        <datalist id="players2">
+                            <option value="Edin Dzeko (Forvet)">
+                            <option value="Dusan Tadic (Kanat)">
+                            <option value="Vincent Aboubakar (Forvet)">
+                        </datalist>
+                    </div>
+                </div>
+
+                <div class="comparison-charts">
+                    <div class="chart-card">
+                        <h3>Yetenek Karşılaştırması</h3>
+                        <div class="chart-container">
+                            <canvas id="skillsChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="chart-card">
+                        <h3>Form Trendi</h3>
+                        <div class="chart-container">
+                            <canvas id="formChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/takim-karsilastirma.js"></script>
+</body>
+</html> 

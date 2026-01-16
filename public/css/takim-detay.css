@@ -1,0 +1,276 @@
+/* Takım Detay Sayfası Stilleri */
+
+/* Header Bölümü */
+.team-detail-header {
+    margin-bottom: 30px;
+}
+
+.team-banner {
+    background: linear-gradient(135deg, #FFB94E 0%, #E30A17 100%);
+    border-radius: 15px;
+    padding: 40px;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.team-info {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.team-logo {
+    width: 120px;
+    height: 120px;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.team-basic-info h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.team-meta {
+    display: flex;
+    gap: 20px;
+}
+
+.team-meta span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.1);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.team-stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.stat-box {
+    background: rgba(255,255,255,0.1);
+    padding: 15px 25px;
+    border-radius: 12px;
+    text-align: center;
+    flex: 1;
+}
+
+.stat-box.highlight {
+    background: rgba(255,255,255,0.2);
+}
+
+.stat-box .stat-value {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.stat-box .stat-label {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Sekmeler */
+.team-tabs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.tab-btn {
+    padding: 12px 24px;
+    border: none;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.tab-btn i {
+    font-size: 16px;
+}
+
+.tab-btn:hover {
+    background: rgba(17, 50, 100, 0.1);
+    transform: translateY(-2px);
+}
+
+.tab-btn.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Karşılaştırma butonu için özel stil */
+.tab-btn .fa-balance-scale {
+    transition: transform 0.3s ease;
+}
+
+.tab-btn:hover .fa-balance-scale {
+    transform: scale(1.1);
+}
+
+/* Filtreler */
+.squad-filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    border: 1px solid var(--border-color);
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* Oyuncu Kartları */
+.players-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+.player-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.player-card:hover {
+    transform: translateY(-5px);
+}
+
+.player-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    position: relative;
+}
+
+.player-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Fotoğraf yüklenemediğinde gösterilecek varsayılan içerik */
+.player-image img:not([src]), 
+.player-image img[src=""], 
+.player-image img[src="images/default-player.png"],
+.player-image img[src="images/players/davinson-sanchez.jpg"],
+.player-image img[src="images/players/gunay-guvenc.jpg"] {
+    opacity: 0;
+}
+
+.player-image:not(:has(img[src]:not([src=""]):not([src="images/default-player.png"]):not([src="images/players/davinson-sanchez.jpg"]):not([src="images/players/gunay-guvenc.jpg"]))::after {
+    content: '\f007'; /* FontAwesome kullanıcı ikonu */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 80px;
+    color: #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.player-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.player-info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+}
+
+.position {
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 1200px) {
+    .team-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .team-meta {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .team-stats {
+        flex-wrap: wrap;
+    }
+    
+    .stat-box {
+        flex: 1 1 calc(50% - 10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .team-tabs {
+        flex-wrap: wrap;
+    }
+    
+    .tab-btn {
+        flex: 1;
+        justify-content: center;
+        min-width: 120px;
+    }
+    
+    .squad-filters {
+        flex-wrap: wrap;
+    }
+    
+    .filter-btn {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .stat-box {
+        flex: 1 1 100%;
+    }
+
+    .players-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .player-image {
+        height: 250px;
+    }
+} 

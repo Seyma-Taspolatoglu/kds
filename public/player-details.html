@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oyuncu Detayları - Transfer Merkezi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <h2>TRANSFER MERKEZİ</h2>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Oyuncu ara...">
+                <i class="fas fa-search"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/"><i class="fas fa-home"></i>Ana Sayfa</a></li>
+                    <li><a href="/teams.html"><i class="fas fa-users"></i>Takımlar</a></li>
+                    <li><a href="/statistics.html"><i class="fas fa-chart-bar"></i>İstatistikler</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main-content">
+            <div class="player-header">
+                <div class="player-info">
+                    <img src="" alt="" id="playerImage" class="player-image-large">
+                    <div class="player-details">
+                        <h1 id="playerName"></h1>
+                        <div class="player-meta">
+                            <span id="playerTeam"></span>
+                            <span id="playerPosition"></span>
+                            <span id="playerAge"></span>
+                        </div>
+                        <div class="player-value">
+                            <span id="marketValue"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="player-stats-grid">
+                <div class="stats-card">
+                    <h3>Sezon İstatistikleri</h3>
+                    <div class="stats-table">
+                        <table>
+                            <tr>
+                                <th>Maç</th>
+                                <th>Gol</th>
+                                <th>Asist</th>
+                                <th>Sarı K.</th>
+                                <th>Kırmızı K.</th>
+                            </tr>
+                            <tr id="seasonStats">
+                                <!-- JavaScript ile doldurulacak -->
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="stats-card">
+                    <h3>Form Grafiği</h3>
+                    <div class="chart-container">
+                        <canvas id="formChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="stats-card">
+                    <h3>Performans Detayları</h3>
+                    <div class="chart-container">
+                        <canvas id="performanceChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="stats-card">
+                    <h3>Piyasa Değeri Gelişimi</h3>
+                    <div class="chart-container">
+                        <canvas id="valueChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="player-career">
+                <h3>Kariyer Geçmişi</h3>
+                <div class="career-timeline" id="careerTimeline">
+                    <!-- JavaScript ile doldurulacak -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/player-details.js"></script>
+</body>
+</html> 

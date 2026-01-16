@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Süper Lig Sıralaması | Transfer Raporu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/super-lig.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <h2>TRANSFER MERKEZİ</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/"><i class="fas fa-home"></i>Ana Sayfa</a></li>
+                    <li><a href="takimlar.html"><i class="fas fa-users"></i>Takımlar</a></li>
+                    <li><a href="transfer-onerisi.html"><i class="fas fa-lightbulb"></i>Transfer Önerisi</a></li>
+                    <li><a href="genel-istatistikler.html"><i class="fas fa-chart-bar"></i>Genel İstatistikler</a></li>
+                    <li><a href="super-lig-siralamasi.html" class="active"><i class="fas fa-trophy"></i>Süper Lig Sıralaması</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main-content">
+            <div class="league-header">
+                <h1>Süper Lig Sıralaması</h1>
+                <div class="season-selector">
+                    <span>2023-2024 Sezonu</span>
+                </div>
+            </div>
+
+            <div class="standings-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sıra</th>
+                            <th>Takım</th>
+                            <th>O</th>
+                            <th>G</th>
+                            <th>B</th>
+                            <th>M</th>
+                            <th>A</th>
+                            <th>Y</th>
+                            <th>Av</th>
+                            <th>P</th>
+                            <th>Form</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="champions-league">
+                            <td>1</td>
+                            <td class="team-cell">
+                                <img src="images/logos/galatasaray.png" alt="Galatasaray">
+                                <span>Galatasaray</span>
+                            </td>
+                            <td>16</td>
+                            <td>14</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>47</td>
+                            <td>19</td>
+                            <td>28</td>
+                            <td>44</td>
+                            <td class="form">
+                                <span class="win">G</span>
+                                <span class="draw">B</span>
+                                <span class="win">G</span>
+                                <span class="win">G</span>
+                                <span class="win">G</span>
+                            </td>
+                        </tr>
+                        <tr class="champions-league">
+                            <td>2</td>
+                            <td class="team-cell">
+                                <img src="images/logos/fenerbahce.png" alt="Fenerbahçe">
+                                <span>Fenerbahçe</span>
+                            </td>
+                            <td>16</td>
+                            <td>11</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>40</td>
+                            <td>15</td>
+                            <td>25</td>
+                            <td>36</td>
+                            <td class="form">
+                                <span class="win">G</span>
+                                <span class="win">G</span>
+                                <span class="loss">M</span>
+                                <span class="win">G</span>
+                                <span class="draw">B</span>
+                            </td>
+                        </tr>
+                        <tr class="conference-league">
+                            <td>3</td>
+                            <td class="team-cell">
+                                <img src="images/logos/samsunspor.png" alt="Samsunspor">
+                                <span>Samsunspor</span>
+                            </td>
+                            <td>16</td>
+                            <td>9</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>29</td>
+                            <td>17</td>
+                            <td>12</td>
+                            <td>30</td>
+                            <td class="form">
+                                <span class="loss">M</span>
+                                <span class="draw">B</span>
+                                <span class="win">G</span>
+                                <span class="loss">M</span>
+                                <span class="draw">B</span>
+                            </td>
+                        </tr>
+                        <tr class="conference-league">
+                            <td>4</td>
+                            <td class="team-cell">
+                                <img src="images/logos/goztepe.png" alt="Göztepe">
+                                <span>Göztepe</span>
+                            </td>
+                            <td>16</td>
+                            <td>8</td>
+                            <td>4</td>
+                            <td>4</td>
+                            <td>31</td>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>28</td>
+                            <td class="form">
+                                <span class="win">G</span>
+                                <span class="loss">M</span>
+                                <span class="win">G</span>
+                                <span class="draw">B</span>
+                                <span class="win">G</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td class="team-cell">
+                                <img src="images/logos/eyupspor.png" alt="Eyüpspor">
+                                <span>Eyüpspor</span>
+                            </td>
+                            <td>17</td>
+                            <td>7</td>
+                            <td>6</td>
+                            <td>4</td>
+                            <td>25</td>
+                            <td>18</td>
+                            <td>7</td>
+                            <td>27</td>
+                            <td class="form">
+                                <span class="loss">M</span>
+                                <span class="draw">B</span>
+                                <span class="win">G</span>
+                                <span class="loss">M</span>
+                                <span class="draw">B</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td class="team-cell">
+                                <img src="images/logos/besiktas.png" alt="Beşiktaş">
+                                <span>Beşiktaş</span>
+                            </td>
+                            <td>16</td>
+                            <td>7</td>
+                            <td>5</td>
+                            <td>4</td>
+                            <td>25</td>
+                            <td>18</td>
+                            <td>7</td>
+                            <td>26</td>
+                            <td class="form">
+                                <span class="loss">M</span>
+                                <span class="draw">B</span>
+                                <span class="win">G</span>
+                                <span class="loss">M</span>
+                                <span class="draw">B</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td class="team-cell">
+                                <img src="images/logos/basaksehir.png" alt="Başakşehir">
+                                <span>Başakşehir</span>
+                            </td>
+                            <td>16</td>
+                            <td>6</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>27</td>
+                            <td>23</td>
+                            <td>4</td>
+                            <td>23</td>
+                            <td class="form">
+                                <span class="loss">M</span>
+                                <span class="win">G</span>
+                                <span class="win">G</span>
+                                <span class="loss">M</span>
+                                <span class="draw">B</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td class="team-cell">
+                                <img src="images/logos/gaziantep.png" alt="Gaziantep FK">
+                                <span>Gaziantep FK</span>
+                            </td>
+                            <td>16</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>22</td>
+                            <td>24</td>
+                            <td>-2</td>
+                            <td>21</td>
+                            <td class="form">
+                                <span class="win">G</span>
+                                <span class="loss">M</span>
+                                <span class="win">G</span>
+                                <span class="loss">M</span>
+                                <span class="win">G</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td class="team-cell">
+                                <img src="images/logos/antalyaspor.png" alt="Antalyaspor">
+                                <span>Antalyaspor</span>
+                            </td>
+                            <td>16</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>20</td>
+                            <td>28</td>
+                            <td>-8</td>
+                            <td>21</td>
+                            <td class="form">
+                                <span class="win">G</span>
+                                <span class="win">G</span>
+                                <span class="draw">B</span>
+                                <span class="draw">B</span>
+                                <span class="win">G</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td class="team-cell">
+                                <img src="images/logos/kasimpasa.png" alt="Kasımpaşa">
+                                <span>Kasımpaşa</span>
+                            </td>
+                            <td>16</td>
+                            <td>4</td>
+                            <td>8</td>
+                            <td>4</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>-1</td>
+                            <td>20</td>
+                            <td class="form">
+                                <span class="loss">M</span>
+                                <span class="draw">B</span>
+                                <span class="draw">B</span>
+                                <span class="win">G</span>
+                                <span class="draw">B</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td class="team-cell">
+                                <img src="images/logos/konyaspor.png" alt="Konyaspor">
+                                <span>Konyaspor</span>
+                            </td>
+                            <td>16</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>18</td>
+                            <td>23</td>
+                            <td>-5</td>
+                            <td>20</td>
+                            <td class="form">
+                                <span class="loss">M</span>
+                                <span class="draw">B</span>
+                                <span class="win">G</span>
+                                <span class="draw">B</span>
+                                <span class="draw">B</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td class="team-cell">
+                                <img src="images/logos/rizespor.png" alt="Rizespor">
+                                <span>Rizespor</span>
+                            </td>
+                            <td>16</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>8</td>
+                            <td>16</td>
+                            <td>25</td>
+                            <td>-9</td>
+                            <td>20</td>
+                            <td class="form">
+                                <span class="win">G</span>
+                                <span class="win">G</span>
+                                <span class="loss">M</span>
+                                <span class="draw">B</span>
+                                <span class="loss">M</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td class="team-cell">
+                                <img src="images/logos/trabzonspor.png" alt="Trabzonspor">
+                                <span>Trabzonspor</span>
+                            </td>
+                            <td>16</td>
+                            <td>4</td>
+                            <td>7</td>
+                            <td>5</td>
+                            <td>24</td>
+                            <td>22</td>
+                            <td>2</td>
+                            <td>19</td>
+                            <td class="form">
+                                <span class="win">G</span>
+                                <span class="loss">M</span>
+                                <span class="draw">B</span>
+                                <span class="loss">M</span>
+                                <span class="win">G</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td class="team-cell">
+                                <img src="images/logos/sivasspor.png" alt="Sivasspor">
+                                <span>Sivasspor</span>
+                            </td>
+                            <td>17</td>
+                            <td>5</td>
+                            <td>4</td>
+                            <td>8</td>
+                            <td>20</td>
+                            <td>27</td>
+                            <td>-7</td>
+                            <td>19</td>
+                            <td class="form">
+                                <span class="draw">B</span>
+                                <span class="loss">M</span>
+                                <span class="loss">M</span>
+                                <span class="loss">M</span>
+                                <span class="draw">B</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td class="team-cell">
+                                <img src="images/logos/alanyaspor.png" alt="Alanyaspor">
+                                <span>Alanyaspor</span>
+                            </td>
+                            <td>16</td>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>6</td>
+                            <td>16</td>
+                            <td>19</td>
+                            <td>-3</td>
+                            <td>18</td>
+                            <td class="form">
+                                <span class="draw">B</span>
+                                <span class="win">G</span>
+                                <span class="loss">M</span>
+                                <span class="win">G</span>
+                                <span class="draw">B</span>
+                            </td>
+                        </tr>
+                        <tr class="relegation">
+                            <td>16</td>
+                            <td class="team-cell">
+                                <img src="images/logos/kayserispor.png" alt="Kayserispor">
+                                <span>Kayserispor</span>
+                            </td>
+                            <td>16</td>
+                            <td>3</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>16</td>
+                            <td>32</td>
+                            <td>-16</td>
+                            <td>15</td>
+                            <td class="form">
+                                <span class="loss">M</span>
+                                <span class="loss">M</span>
+                                <span class="win">G</span>
+                                <span class="loss">M</span>
+                                <span class="loss">M</span>
+                            </td>
+                        </tr>
+                        <tr class="relegation">
+                            <td>17</td>
+                            <td class="team-cell">
+                                <img src="images/logos/bodrumspor.png" alt="Bodrumspor">
+                                <span>Bodrumspor</span>
+                            </td>
+                            <td>16</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>10</td>
+                            <td>12</td>
+                            <td>22</td>
+                            <td>-10</td>
+                            <td>14</td>
+                            <td class="form">
+                                <span class="loss">M</span>
+                                <span class="loss">M</span>
+                                <span class="win">G</span>
+                                <span class="win">G</span>
+                                <span class="win">G</span>
+                            </td>
+                        </tr>
+                        <tr class="relegation">
+                            <td>18</td>
+                            <td class="team-cell">
+                                <img src="images/logos/hatayspor.png" alt="Hatayspor">
+                                <span>Hatayspor</span>
+                            </td>
+                            <td>16</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>9</td>
+                            <td>14</td>
+                            <td>27</td>
+                            <td>-13</td>
+                            <td>9</td>
+                            <td class="form">
+                                <span class="draw">B</span>
+                                <span class="draw">B</span>
+                                <span class="loss">M</span>
+                                <span class="draw">B</span>
+                                <span class="loss">M</span>
+                            </td>
+                        </tr>
+                        <tr class="relegation">
+                            <td>19</td>
+                            <td class="team-cell">
+                                <img src="images/logos/adana-demirspor.png" alt="Adana Demirspor">
+                                <span>Adana Demirspor</span>
+                            </td>
+                            <td>16</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>12</td>
+                            <td>15</td>
+                            <td>36</td>
+                            <td>-21</td>
+                            <td>5</td>
+                            <td class="form">
+                                <span class="loss">M</span>
+                                <span class="loss">M</span>
+                                <span class="win">G</span>
+                                <span class="win">G</span>
+                                <span class="win">G</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="legend">
+                <div class="legend-item champions-league">
+                    <span class="legend-color"></span>
+                    <span>Şampiyonlar Ligi</span>
+                </div>
+                <div class="legend-item conference-league">
+                    <span class="legend-color"></span>
+                    <span>Konferans Ligi</span>
+                </div>
+                <div class="legend-item relegation">
+                    <span class="legend-color"></span>
+                    <span>Düşme Hattı</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
