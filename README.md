@@ -59,19 +59,25 @@ Takımlar bütçelerine ve ihtiyaçlarına göre oyuncu transfer önerileri alab
 ---
 
 ## 🗄️ Veritabanı Yapısı (ER Diyagramı)
-Proje aşağıdaki temel varlıkları içerir:
-- Team
-- Player
-- Transfer
-- PlayerStats
 
-> ER diyagramı proje klasöründe PNG/PDF formatında sunulmuştur.
+<img width="1138" height="560" alt="Ekran görüntüsü 2026-01-16 183546" src="https://github.com/user-attachments/assets/6ab9466a-69d4-42da-b565-d10962cc3f02" />
 
----
 
 ## 🚀 Kurulum Adımları
 
-1. Repoyu klonlayın:
-```bash
-git clone https://github.com/kullanici-adi/KDS.git
+Projenin yerel makinenizde çalışması için aşağıdaki adımları izleyin:
 
+1. **Projeyi Klonlayın:**
+   Terminali açın ve projeyi indirin:
+   ```bash
+   git clone [https://github.com/kullanici-adi/KDS.git](https://github.com/kullanici-adi/KDS.git)
+   cd KDS
+
+   npm install
+   
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=
+DB_NAME=futbolcu
+PORT=3000
+npm start
