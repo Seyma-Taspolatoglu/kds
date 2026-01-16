@@ -60,7 +60,8 @@ Takımlar bütçelerine ve ihtiyaçlarına göre oyuncu transfer önerileri alab
 
 ## 🗄️ Veritabanı Yapısı (ER Diyagramı)
 
-<img width="1138" height="560" alt="Ekran görüntüsü 2026-01-16 183546" src="https://github.com/user-attachments/assets/6ab9466a-69d4-42da-b565-d10962cc3f02" />
+<img width="1138" height="560" alt="Ekran görüntüsü 2026-01-16 183546" src="https://github.com/user-attachments/assets/d3342dc9-07f9-4e47-8fad-1438a4a89508" />
+
 
 <img width="955" height="463" alt="Ekran görüntüsü 2026-01-16 185409" src="https://github.com/user-attachments/assets/92fdd276-8326-460f-9af8-6aec735ead9a" />
 <img width="963" height="410" alt="Ekran görüntüsü 2026-01-16 185420" src="https://github.com/user-attachments/assets/7f9a3ab5-1bb6-4ae1-9d44-3a75e4a6d523" 
