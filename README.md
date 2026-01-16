@@ -62,6 +62,15 @@ Takımlar bütçelerine ve ihtiyaçlarına göre oyuncu transfer önerileri alab
 
 <img width="1138" height="560" alt="Ekran görüntüsü 2026-01-16 183546" src="https://github.com/user-attachments/assets/6ab9466a-69d4-42da-b565-d10962cc3f02" />
 
+<img width="955" height="463" alt="Ekran görüntüsü 2026-01-16 185409" src="https://github.com/user-attachments/assets/92fdd276-8326-460f-9af8-6aec735ead9a" />
+<img width="963" height="410" alt="Ekran görüntüsü 2026-01-16 185420" src="https://github.com/user-attachments/assets/7f9a3ab5-1bb6-4ae1-9d44-3a75e4a6d523" 
+<img width="961" height="454" alt="Ekran görüntüsü 2026-01-16 185432" src="https://github.com/user-attachments/assets/d9781995-28b5-460f-be7b-de5a195415dd" />
+/>
+<img width="955" height="468" alt="Ekran görüntüsü 2026-01-16 185446" src="https://github.com/user-attachments/assets/33a9704b-07b5-4ae9-9d91-e5156f3851c3"
+<img width="956" height="383" alt="Ekran görüntüsü 2026-01-16 185511" src="https://github.com/user-attachments/assets/cef5751f-0e0b-420f-b7af-ec63acaec10c" />
+ />
+<img width="967" height="342" alt="Ekran görüntüsü 2026-01-16 185524" src="https://github.com/user-attachments/assets/394d0374-e59b-400c-a1f7-0144b82cd3c0" />
+<img width="918" height="466" alt="Ekran görüntüsü 2026-01-16 185537" src="https://github.com/user-attachments/assets/cbd2e24c-9dc2-4d1a-9d31-9b4dc0284e5c" />
 
 ## 🚀 Kurulum Adımları
 
