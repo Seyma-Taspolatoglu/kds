@@ -70,7 +70,7 @@ Projenin yerel makinenizde çalışması için aşağıdaki adımları izleyin:
 1. **Projeyi Klonlayın:**
    Terminali açın ve projeyi indirin:
    ```bash
-   git clone [https://github.com/kullanici-adi/KDS.git](https://github.com/kullanici-adi/KDS.git)
+   git clone https://github.com/Seyma-Taspolatoglu/kds.git
    cd KDS
 
    npm install
